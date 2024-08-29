@@ -30,7 +30,7 @@ public class Main {
         long count = TaskStream.task2(books);
         Assertion.assertEquals(3L, count);
 
-        //Задание 3
+//        Задание 3
         Map<String, List<String>> bookReviews = TaskStream.task3(books);
         //ожидаемый результат
         Map<String, List<String>> expectedMap = new HashMap<>();
@@ -41,7 +41,7 @@ public class Main {
         //тест
         Assertion.assertEquals(expectedMap, bookReviews);
 
-        //Задание 4
+//        //Задание 4
         Map<String, List<String>> bookReviews2 = TaskStream.task4(books);
         //ожидаемый результат
         Map<String, List<String>> expectedMap2 = new HashMap<>();
@@ -50,27 +50,27 @@ public class Main {
         //тест
         Assertion.assertEquals(expectedMap2, bookReviews2);
 
-        //Задание 5
+//        //Задание 5
         List<String> reviews = TaskStream.task5(books);
         Assertion.assertEquals(Arrays.asList("Отличная книга!", "Мне понравилось", "Рекомендую всем!"), reviews);
 
-        //Задание 6
+//        //Задание 6
         double average = TaskStream.task6(books);
         Assertion.assertEquals(49, (int) average);
-
+//
         //Задание 7
         boolean authorExists = TaskStream.task7(books);
         Assertion.assertEquals(true, authorExists);
-
-        //Задание 8
+//
+//        //Задание 8
         Set<String> titles = TaskStream.task8(books);
         Assertion.assertEquals(true, titles.containsAll(Arrays.asList("Книга 1", "Книга 2", "Книга 3")));
-
-        //Задание 9
+//
+//        //Задание 9
         List<Book> booksActual = TaskStream.task9(books);
         Assertion.assertEquals(Collections.singletonList(book2), booksActual);
 
-        //Задание 10
+//        //Задание 10
         Map<String, List<Book>> oks = TaskStream.task10(books);
         //ожидаемый результат
         Map<String, List<Book>> expectedMap3 = new HashMap<>();
@@ -79,11 +79,11 @@ public class Main {
         //тест
         Assertion.assertEquals(expectedMap3, oks);
 
-        //Задание 11
+//        //Задание 11
         List<Book> recommended = TaskStream.task11(books);
         Assertion.assertEquals(Collections.singletonList(book2), recommended);
 
-        //Задание 12
+//        //Задание 12
         Book cheap = TaskStream.task12(books);
         Assertion.assertEquals(book2, cheap);
     }
